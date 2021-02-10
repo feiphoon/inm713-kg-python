@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://city.ac.uk/inm713-tutorial/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/Fei_Phoon">
+    <language rdf:resource="http://city.ac.uk/inm713-tutorial/Mandarin"/>
+    <language rdf:resource="http://city.ac.uk/inm713-tutorial/Malay"/>
+    <city rdf:resource="http://city.ac.uk/inm713-tutorial/London"/>
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/Person"/>
+    <birthPlace rdf:resource="http://city.ac.uk/inm713-tutorial/Bandar_Seri_Begawan"/>
+    <surname>Phoon</surname>
+    <name>Fei</name>
+    <language rdf:resource="http://city.ac.uk/inm713-tutorial/Arabic"/>
+    <language rdf:resource="http://city.ac.uk/inm713-tutorial/English"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/Mandarin">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/Malay">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/Arabic">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/Bandar_Seri_Begawan">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/London">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://city.ac.uk/inm713-tutorial/English">
+    <rdf:type rdf:resource="http://city.ac.uk/inm713-tutorial/Language"/>
+  </rdf:Description>
+</rdf:RDF>

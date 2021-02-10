@@ -1,0 +1,30 @@
+@prefix : <http://stardog.com/tutorial/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Please_Please_Me a :Album ;
+    :artist :The_Beatles ;
+    :date "1963-03-22"^^xsd:date ;
+    :name "Please Please Me" ;
+    :track :Love_Me_Do .
+
+:George_Harrison a :SoloArtist .
+
+:Love_Me_Do a :Song ;
+    :length 125 ;
+    :name "Love Me Do" ;
+    :writer :John_Lennon,
+        :Paul_McCartney .
+
+:Ringo_Starr a :SoloArtist .
+
+:The_Beatles a :Band ;
+    :member :George_Harrison,
+        :John_Lennon,
+        :Paul_McCartney,
+        :Ringo_Starr ;
+    :name "The Beatles" .
+
+:John_Lennon a :SoloArtist .
+
+:Paul_McCartney a :SoloArtist .
+

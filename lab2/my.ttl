@@ -1,0 +1,20 @@
+PREFIX : <http://city.ac.uk/inm713-tutorial/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:London rdf:type :City .
+:Bandar_Seri_Begawan rdf:type :City .
+:English rdf:type :Language .
+:Arabic rdf:type :Language .
+:Malay rdf:type :Language .
+:Mandarin rdf:type :Language .
+
+:Fei_Phoon rdf:type :Person .
+:Fei_Phoon :name "Fei" .
+:Fei_Phoon :surname "Phoon" .
+:Fei_Phoon :city :London .
+:Fei_Phoon :birthPlace :Bandar_Seri_Begawan .
+:Fei_Phoon :language :English .
+:Fei_Phoon :language :Arabic .
+:Fei_Phoon :language :Malay .
+:Fei_Phoon :language :Mandarin .
