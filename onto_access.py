@@ -11,10 +11,10 @@ from enum import Enum
 
 
 class Reasoner(Enum):
-    HERMIT=0 #Not really adding the right set of entailments
-    PELLET=1 #Slow for large ontologies
-    STRUCTURAL=2  #Basic domain/range propagation
-    NONE=3 #No reasoning
+    HERMIT=0 # Not really adding the right set of entailments http://www.hermit-reasoner.com/
+    PELLET=1 # Best working so far. Slow for large ontologies - Ernesto says ~1000 entities is large. https://github.com/stardog-union/pellet
+    STRUCTURAL=2 # Basic domain/range propagation - http://www.hermit-reasoner.com/
+    NONE=3 # No reasoning
 
 
 class OntologyAccess(object):
