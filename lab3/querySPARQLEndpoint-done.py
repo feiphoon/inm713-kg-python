@@ -1,17 +1,15 @@
-'''
+"""
 Created on 19 Jan 2021
 
 @author: ejimenez-ruiz
-'''
+"""
 
 from SPARQLWrapper import SPARQLWrapper, JSON, XML
 from pprint import pprint
 import time
 
 
-
 def queryRemoteGraph(endpoint_url, query, attempts=3):
-
 
     try:
 
@@ -28,29 +26,24 @@ def queryRemoteGraph(endpoint_url, query, attempts=3):
         # print("RAW RESULTS IN JSON FORMAT:")
         # pprint(results)
 
-
         print("\nRESULTS:")
         for result in results["results"]["bindings"]:
 
             # Prints individual results
             print(result["name_laur"]["value"])
 
-
-
-
     except:
 
         print("Query '%s' failed. Attempts: %s" % (query, str(attempts)))
-        time.sleep(60) #to avoid limit of calls, sleep 60s
-        attempts-=1
-        if attempts>0:
+        time.sleep(60)  # to avoid limit of calls, sleep 60s
+        attempts -= 1
+        if attempts > 0:
             return queryRemoteGraph(endpoint_url, query, attempts)
         else:
             return None
 
 
-
-#See more examples here: https://www.nobelprize.org/about/linked-data-examples/
+# See more examples here: https://www.nobelprize.org/about/linked-data-examples/
 nobelprize_endpoint = "http://data.nobelprize.org/sparql"
 
 # nobelprize_query = """
@@ -72,7 +65,7 @@ nobelprize_endpoint = "http://data.nobelprize.org/sparql"
 #         ?laur rdfs:label ?name_laur .
 #         ?laur foaf:gender "female" .
 #     }
-    # """
+# """
 
 # print("\nQuerying Nobel Prize Knowledge Graph (Female laureates):")
 # queryRemoteGraph(nobelprize_endpoint, nobelprize_query)
@@ -165,5 +158,3 @@ nobelprize_query = """
 #     """
 
 queryRemoteGraph(nobelprize_endpoint, nobelprize_query)
-
-

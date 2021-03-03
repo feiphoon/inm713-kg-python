@@ -14,5 +14,5 @@ import rdflib
 
 g = rdflib.Graph()
 g.parse("beatles.rdf", format="xml")
-    
-g.serialize(destination='beatles_new.ttl', format='turtle')
+
+g.serialize(destination="beatles_new.ttl", format="turtle")

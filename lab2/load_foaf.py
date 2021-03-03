@@ -17,11 +17,13 @@ g = rdflib.Graph()
 # g.load('http://dbpedia.org/resource/Semantic_Web')
 
 
-g.add((
-    rdflib.URIRef("https://sws.ifi.uio.no/vocab/ernesto_foaf.rdf"),
-    FOAF.givenName,
-    rdflib.Literal("Prof", datatype=XSD.string)
-))
+g.add(
+    (
+        rdflib.URIRef("https://sws.ifi.uio.no/vocab/ernesto_foaf.rdf"),
+        FOAF.givenName,
+        rdflib.Literal("Prof", datatype=XSD.string),
+    )
+)
 
 for s, p, o in g:
     print(s, p, o)
