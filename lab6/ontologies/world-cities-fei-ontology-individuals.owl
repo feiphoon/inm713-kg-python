@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.feiphoon.com/ontologies/world-cities#"
+     xml:base="http://www.feiphoon.com/ontologies/world-cities"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:world-cities="http://www.semanticweb.org/fei/ontologies/2021/2/world-cities#">
+    <owl:Ontology rdf:about="http://www.feiphoon.com/ontologies/world-cities"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasAdminCapitalCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasAdminCapitalCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#hasCity"/>
+        <owl:inverseOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasCapitalCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasCapitalCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#hasCity"/>
+        <owl:inverseOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasCity">
+        <owl:inverseOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn"/>
+        <rdfs:domain rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Country"/>
+        <rdfs:range rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasFirstLevelAdminCapitalCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasFirstLevelAdminCapitalCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#hasAdminCapitalCity"/>
+        <owl:inverseOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isFirstLevelAdminCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasLowerLevelAdminCapitalCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasLowerLevelAdminCapitalCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#hasAdminCapitalCity"/>
+        <owl:inverseOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isLowerLevelAdminCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isCapitalCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isCapitalCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isFirstLevelAdminCapitalCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isFirstLevelAdminCapitalCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isLocatedIn"/>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#isLowerLevelAdminCapitalCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#isLowerLevelAdminCapitalCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasAdminName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasAdminName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasCityPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasCityPopulation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasLatitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.feiphoon.com/ontologies/world-cities#hasLongitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#AdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#AdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#CapitalCity -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#CapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#City -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#City"/>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#Country -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#Country"/>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#FirstLevelAdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#FirstLevelAdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#AdminCapitalCity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#LowerLevelAdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.feiphoon.com/ontologies/world-cities#LowerLevelAdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.feiphoon.com/ontologies/world-cities#AdminCapitalCity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.feiphoon.com/ontologies/world-cities#Japan">
+        <rdf:type rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Country"/>
+        <hasCapitalCity rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Tokyo"/>
+        <hasCity rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Tokyo"/>
+        <hasFirstLevelAdminCapitalCity rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Osaka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#Osaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.feiphoon.com/ontologies/world-cities#Osaka">
+        <rdf:type rdf:resource="http://www.feiphoon.com/ontologies/world-cities#FirstLevelAdminCapitalCity"/>
+        <isLocatedIn rdf:resource="http://www.feiphoon.com/ontologies/world-cities#Japan"/>
+        <hasAdminName>Ōsaka</hasAdminName>
+        <hasCityPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14977000</hasCityPopulation>
+        <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">34.6936</hasLatitude>
+        <hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">135.5019</hasLongitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.feiphoon.com/ontologies/world-cities#Tokyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.feiphoon.com/ontologies/world-cities#Tokyo">
+        <rdf:type rdf:resource="http://www.feiphoon.com/ontologies/world-cities#CapitalCity"/>
+        <hasAdminName>Tōkyō</hasAdminName>
+        <hasCityPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37977000</hasCityPopulation>
+        <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.6897</hasLatitude>
+        <hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">139.6922</hasLongitude>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

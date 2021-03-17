@@ -1,0 +1,145 @@
+@prefix : <http://www.feiphoon.com/ontologies/world-cities/> .
+@prefix fei: <http://www.feiphoon.com/ontologies/world-cities#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.feiphoon.com/ontologies/world-cities/> .
+
+<http://www.feiphoon.com/ontologies/world-cities/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasAdminCapitalCity
+fei:hasAdminCapitalCity rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf fei:hasCity ;
+                        owl:inverseOf fei:isAdminCapitalCityOf ;
+                        rdf:type owl:FunctionalProperty .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasCapitalCity
+fei:hasCapitalCity rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf fei:hasCity ;
+                   owl:inverseOf fei:isCapitalCityOf .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasCity
+fei:hasCity rdf:type owl:ObjectProperty ;
+            owl:inverseOf fei:isCityLocatedIn ;
+            rdfs:domain fei:Country ;
+            rdfs:range fei:City .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasFirstLevelAdminCapitalCity
+fei:hasFirstLevelAdminCapitalCity rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf fei:hasAdminCapitalCity ;
+                                  owl:inverseOf fei:isFirstLevelAdminCapitalCityOf .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasLowerLevelAdminCapitalCity
+fei:hasLowerLevelAdminCapitalCity rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf fei:hasAdminCapitalCity ;
+                                  owl:inverseOf fei:isLowerLevelAdminCapitalCityOf .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isAdminCapitalCityOf
+fei:isAdminCapitalCityOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf fei:isCityLocatedIn .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isCapitalCityOf
+fei:isCapitalCityOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf fei:isCityLocatedIn ;
+                    rdf:type owl:FunctionalProperty .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isCityLocatedIn
+fei:isCityLocatedIn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf fei:isLocatedIn ;
+                    rdf:type owl:FunctionalProperty .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isFirstLevelAdminCapitalCityOf
+fei:isFirstLevelAdminCapitalCityOf rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf fei:isAdminCapitalCityOf ;
+                                   rdf:type owl:FunctionalProperty .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isLocatedIn
+fei:isLocatedIn rdf:type owl:ObjectProperty .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#isLowerLevelAdminCapitalCityOf
+fei:isLowerLevelAdminCapitalCityOf rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf fei:isAdminCapitalCityOf ;
+                                   rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasAdminName
+fei:hasAdminName rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain fei:City ;
+                 rdfs:range rdf:PlainLiteral .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasCityPopulation
+fei:hasCityPopulation rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain fei:City ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasLatitude
+fei:hasLatitude rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain fei:City ;
+                rdfs:range xsd:float .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#hasLongitude
+fei:hasLongitude rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain fei:City ;
+                 rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.feiphoon.com/ontologies/world-cities#AdminCapitalCity
+fei:AdminCapitalCity rdf:type owl:Class ;
+                     rdfs:subClassOf fei:City .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#CapitalCity
+fei:CapitalCity rdf:type owl:Class ;
+                rdfs:subClassOf fei:City .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#City
+fei:City rdf:type owl:Class .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#Country
+fei:Country rdf:type owl:Class .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#FirstLevelAdminCapitalCity
+fei:FirstLevelAdminCapitalCity rdf:type owl:Class ;
+                               rdfs:subClassOf fei:AdminCapitalCity .
+
+
+###  http://www.feiphoon.com/ontologies/world-cities#LowerLevelAdminCapitalCity
+fei:LowerLevelAdminCapitalCity rdf:type owl:Class ;
+                               rdfs:subClassOf fei:AdminCapitalCity .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

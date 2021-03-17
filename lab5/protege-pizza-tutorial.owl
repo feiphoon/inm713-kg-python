@@ -712,6 +712,7 @@
     <!-- http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Hot -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Hot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Spiciness"/>
         <isSpicierThan rdf:resource="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Medium"/>
     </owl:NamedIndividual>
     
@@ -746,7 +747,9 @@
 
     <!-- http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Mild -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Mild"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Mild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fei/ontologies/2021/2/pizza-tutorial#Spiciness"/>
+    </owl:NamedIndividual>
     
 
 

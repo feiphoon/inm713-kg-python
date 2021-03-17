@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.feiphoon.com/ontologies/world-cities"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.feiphoon.com/ontologies/world-cities">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstLevelAdminCapitalCityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstLevelAdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tokyo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Osaka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowerLevelAdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAdminName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCapitalCityOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstLevelAdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCityPopulation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLowerLevelAdminCapitalCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLowerLevelAdminCapitalCityOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdminCapitalCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapitalCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstLevelAdminCapitalCity"/>
+        <Class IRI="#AdminCapitalCity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowerLevelAdminCapitalCity"/>
+        <Class IRI="#AdminCapitalCity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminCapitalCity"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FirstLevelAdminCapitalCity"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CapitalCity"/>
+        <NamedIndividual IRI="#Tokyo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Tokyo"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+        <NamedIndividual IRI="#Japan"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapitalCity"/>
+        <NamedIndividual IRI="#Japan"/>
+        <NamedIndividual IRI="#Tokyo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Japan"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Japan"/>
+        <NamedIndividual IRI="#Tokyo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFirstLevelAdminCapitalCity"/>
+        <NamedIndividual IRI="#Japan"/>
+        <NamedIndividual IRI="#Osaka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFirstLevelAdminCapitalCityOf"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalCityOf"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAdminName"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <Literal>Ōsaka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCityPopulation"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14977000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">34.6936</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Osaka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">135.5019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAdminName"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <Literal>Tōkyō</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCityPopulation"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37977000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">35.6897</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Tokyo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">139.6922</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+        <ObjectProperty IRI="#hasCity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapitalCity"/>
+        <ObjectProperty IRI="#hasCity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFirstLevelAdminCapitalCity"/>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLowerLevelAdminCapitalCity"/>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCapitalCityOf"/>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFirstLevelAdminCapitalCityOf"/>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLowerLevelAdminCapitalCityOf"/>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAdminCapitalCity"/>
+        <ObjectProperty IRI="#isAdminCapitalCityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCapitalCity"/>
+        <ObjectProperty IRI="#isCapitalCityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCity"/>
+        <ObjectProperty IRI="#isCityLocatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFirstLevelAdminCapitalCity"/>
+        <ObjectProperty IRI="#isFirstLevelAdminCapitalCityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLowerLevelAdminCapitalCity"/>
+        <ObjectProperty IRI="#isLowerLevelAdminCapitalCityOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAdminName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCityPopulation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLatitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLongitude"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAdminName"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCityPopulation"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAdminName"/>
+        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCityPopulation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,6 @@
+@prefix fp: <http://www.example.org/fp#> .
+
+fp:japan a fp:Country .
+
+fp:tokyo a fp:City .
+
