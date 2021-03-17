@@ -32,10 +32,15 @@ def checkEntailments(g):
 
     triple1 = ":Carl :hasChild :Ann ."
     triple2 = ":Ann rdf:type :Child ."
-
+    triple3 = ":Juliet :hasChild :Ann ."
+    
     checkEntailment(g, triple1)
     checkEntailment(g, triple2)
-
+    checkEntailment(g, triple3)
+    
+    
+    
+    
 def checkEntailment(g, triple):
 
     # We use an ASK query instead of a select. It could be done with SELETCT and then checking that the results are not empty
