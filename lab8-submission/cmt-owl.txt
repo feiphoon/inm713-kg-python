@@ -1,0 +1,88 @@
+Classes in Ontology: 29
+http://cmt#Meta-Reviewer
+	Meta-Reviewer
+	[]
+http://cmt#Reviewer
+	Reviewer
+	[]
+http://cmt#Decision
+	Decision
+	[]
+http://cmt#Person
+	Person
+	[]
+http://cmt#Document
+	Document
+	[]
+http://cmt#Preference
+	Preference
+	[]
+http://cmt#ProgramCommittee
+	ProgramCommittee
+	[]
+http://cmt#Bid
+	Bid
+	[]
+http://cmt#Conference
+	Conference
+	[]
+http://cmt#ConferenceChair
+	ConferenceChair
+	[]
+http://cmt#ConferenceMember
+	ConferenceMember
+	[]
+http://cmt#AssociatedChair
+	AssociatedChair
+	[]
+http://cmt#ProgramCommitteeMember
+	ProgramCommitteeMember
+	[]
+http://cmt#AuthorNotReviewer
+	AuthorNotReviewer
+	[]
+http://cmt#SubjectArea
+	SubjectArea
+	[]
+http://cmt#ExternalReviewer
+	ExternalReviewer
+	[]
+http://cmt#Chairman
+	Chairman
+	[]
+http://cmt#ProgramCommitteeChair
+	ProgramCommitteeChair
+	[]
+http://cmt#Acceptance
+	Acceptance
+	[]
+http://cmt#Rejection
+	Rejection
+	[]
+http://cmt#Review
+	Review
+	[]
+http://cmt#Paper
+	Paper
+	[]
+http://cmt#Author
+	Author
+	[]
+http://cmt#User
+	User
+	[]
+http://cmt#Co-author
+	Co-author
+	[]
+http://cmt#PaperAbstract
+	PaperAbstract
+	[]
+http://cmt#PaperFullVersion
+	PaperFullVersion
+	[]
+http://cmt#Administrator
+	Administrator
+	[]
+http://cmt#Meta-Review
+	Meta-Review
+	[]
