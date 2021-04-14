@@ -48,8 +48,10 @@ def load_individuals(uri_onto):
 
 
 # Load ontology
-urionto = "http://protege.stanford.edu/ontologies/pizza/pizza.owl"
+# urionto = "http://protege.stanford.edu/ontologies/pizza/pizza.owl"
+# urionto = "http://www.cs.ox.ac.uk/isg/ontologies/schema.org.owl"
+urionto = "http://www.cs.ox.ac.uk/isg/ontologies/dbpedia.owl"
 load_classes(urionto)
-load_object_properties(urionto)
-load_data_properties(urionto)
-load_individuals(urionto)
+# load_object_properties(urionto)
+# load_data_properties(urionto)
+# load_individuals(urionto)
